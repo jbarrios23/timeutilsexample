@@ -1,6 +1,6 @@
 apply plugin: 'com.jfrog.bintray'
 
-version = '1.0.1' //YOUR LIBRARY VERSION
+version = '1.1.0' //YOUR LIBRARY VERSION
 
 task sourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
@@ -32,11 +32,11 @@ bintray {
 
     configurations = ['archives']
     pkg {
-        repo = 'Library' // YOUR REPOSITORY NAME FROM BINTRAY ACCOUNT
+        repo = 'timeutilsexample' // YOUR REPOSITORY NAME FROM BINTRAY ACCOUNT
         name = 'com.example.timeutility' //YOUR PACKAGE NAME FROM BINTRAY ACCOUNT
         desc = 'FilePickerHelper is a library to get multi-type files written in Java.' // YOUR LIBRARY DESCRIPTION
-        websiteUrl = 'https://github.com/jbarrios23/timeutility' // YOUR SITE
-        vcsUrl = 'https://github.com/jbarrios23/timeutility.git' // YOUR GIT REPO
+        websiteUrl = 'https://github.com/jbarrios23/timeutilsexample' // YOUR SITE
+        vcsUrl = 'https://github.com/jbarrios23/timeutilsexample.git' // YOUR GIT REPO
         licenses = ["Apache-2.0"] // A LIST OF YOUR LICENCES
         publish = true
         publicDownloadNumbers = true
